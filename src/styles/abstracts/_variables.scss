@@ -4,7 +4,11 @@ $color-text: #545F7D;
 $color-active: #39CD62;
 $color-blacklisted: #E4033B;
 $color-pending: #E9B200;
+$color-white: #fff;
+$transparent: transparent;
+
 $form-font: 'Avenir Next', sans-serif;
+
 $tablet-breakpoint: 768px;
 $desktop-breakpoint: 1024px;
 
@@ -13,4 +17,10 @@ $badges: (
   "blacklisted": $color-blacklisted,
   "in-active": $color-text,
   "pending": $color-pending,
+);
+
+$buttons: (
+  "primary": $color-text,
+  "secondary": $color-secondary,
+  "blacklisted": $color-blacklisted
 );

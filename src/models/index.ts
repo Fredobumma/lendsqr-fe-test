@@ -1,1 +1,1 @@
-export type { default as TextProps } from "./TextProps";
+export type { default as ElementsProps } from "./ElementsProps";

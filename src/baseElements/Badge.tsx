@@ -1,7 +1,11 @@
 import { Text } from ".";
-import type { TextProps } from "src/models";
+import type { ElementsProps } from "src/models";
 
-const Badge = ({ children, className }: TextProps) => {
+type BadgeProps = {
+	tag?: string;
+} & Omit<ElementsProps, "tag">;
+
+const Badge = ({ children, className }: BadgeProps) => {
 	return (
 		<span className={`badge ${className}`}>
 			<Text tag="span" children={children} />

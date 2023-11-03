@@ -1,9 +1,13 @@
-import { Badge } from "./baseElements";
+import { Button } from "./baseElements";
 
 function App() {
 	return (
 		<>
-			<Badge children="Blacklisted" className="badge--pending" />
+			<Button
+				tag="button"
+				children="Blacklisted"
+				className="btn--blacklisted"
+			/>
 		</>
 	);
 }

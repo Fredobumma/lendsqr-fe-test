@@ -10,8 +10,9 @@
 
 
 /* base imports */
+@use "base/badges";
+@use "base/buttons";
 @use "base/typography";
-@use "base/badge";
 
 /* layouts imports */
 @use "layouts/layouts";

@@ -1,7 +1,7 @@
 import { ReactNode } from "react";
 
-export default interface TextProps {
-	tag?: string;
+export default interface ElementsProps {
+	tag: string;
 	className?: string;
 	children: ReactNode;
 }

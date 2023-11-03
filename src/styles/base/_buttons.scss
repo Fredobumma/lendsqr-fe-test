@@ -1,0 +1,25 @@
+@use "abstracts/variables" as *;
+@use "abstracts/mixins" as *;
+
+@each $key, $value in $buttons {
+  .btn--#{$key} {
+    background-color: $transparent;
+    color: $value;
+    @include border($value)
+  } 
+}
+
+.btn {
+  border-radius: 8px;
+  font-weight: 600;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
+.btn--fill {
+  background-color: $color-secondary;
+  color: $color-white;
+  @include border($color-secondary)
+}

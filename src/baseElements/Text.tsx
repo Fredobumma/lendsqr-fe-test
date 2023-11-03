@@ -1,6 +1,10 @@
 import { createElement } from "react";
 
-import { TextProps } from "src/models";
+import { ElementsProps } from "src/models";
+
+type TextProps = {
+	tag?: string;
+} & Omit<ElementsProps, "tag">;
 
 const Text = ({ tag = "p", className, children }: TextProps) => {
 	return createElement(tag, { className }, children);
