@@ -1,6 +1,11 @@
-import { ImageProps } from "src/models";
+import type { ImageProps } from "src/models";
 
-const Figure = ({ altText, containerClass, image, imageClass }: ImageProps) => {
+const Figure = ({
+	altText,
+	containerClass = "",
+	image,
+	imageClass = "",
+}: ImageProps) => {
 	return (
 		<figure className={`figure ${containerClass}`}>
 			<img src={image} className={imageClass} alt={altText} />

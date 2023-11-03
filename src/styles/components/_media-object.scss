@@ -1,0 +1,21 @@
+@use "abstracts/variables" as *;
+
+.media-object {
+  display: inline-flex;
+  align-items: center;
+
+  .media__image {
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+  }
+
+  .media__text {
+    color: $color-primary;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0 4px 0 10px;
+  }
+}

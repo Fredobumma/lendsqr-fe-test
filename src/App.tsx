@@ -1,9 +1,9 @@
-import { Card } from "./components";
+import { MediaObject } from "./components";
 
 function App() {
 	return (
 		<>
-			<Card />
+			<MediaObject />
 		</>
 	);
 }
