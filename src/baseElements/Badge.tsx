@@ -1,9 +1,7 @@
 import { Text } from ".";
 import type { ElementsProps } from "src/models";
 
-type BadgeProps = {
-	tag?: string;
-} & Omit<ElementsProps, "tag">;
+type BadgeProps = Omit<ElementsProps, "tag">;
 
 const Badge = ({ children, className }: BadgeProps) => {
 	return (

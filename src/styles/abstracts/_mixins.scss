@@ -1,3 +1,7 @@
 @mixin border($value) {
   border: 1px solid $value;
 }
+
+@mixin backgroundColor($value) {
+  background-color: rgba($value, 0.1);
+}

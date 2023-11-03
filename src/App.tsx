@@ -1,13 +1,9 @@
-import { Button } from "./baseElements";
+import { Card } from "./components";
 
 function App() {
 	return (
 		<>
-			<Button
-				tag="button"
-				children="Blacklisted"
-				className="btn--blacklisted"
-			/>
+			<Card />
 		</>
 	);
 }

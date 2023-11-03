@@ -3,4 +3,17 @@
 .heading {
   color: $color-primary;
   font-weight: 700;
+  margin: 0;
+}
+
+h2.heading {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+h3.heading {
+  font-size: unset;
+  font-weight: 500;
+  color: $color-text;
+  text-transform: uppercase;
 }

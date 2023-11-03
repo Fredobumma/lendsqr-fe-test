@@ -1,0 +1,44 @@
+@use "abstracts/variables" as *;
+@use "abstracts/mixins" as *;
+
+.card {
+  border-radius: 4px;
+  box-shadow: 3px 5px 20px 0px rgba(0, 0, 0, 0.04);
+  padding: 20px 30px 30px;
+  @include border(rgba(33, 63, 125, 0.06));
+
+  .card__icon-container {
+    border-radius: 50%;
+    padding: 5px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+
+    .card__icon {
+      height: 18px;
+      width: 18px;
+    }
+  }
+
+  @each $key, $value in $cards {
+    .card--#{$key} {
+      @include backgroundColor($value)
+    }  
+  }
+
+  .sub-heading {
+    margin: 14px 0 12px;
+  }
+
+  @media screen and (min-width: $desktop-breakpoint) {
+  .card__icon-container {
+    padding: 9px;
+
+    .card__icon {
+      height: auto;
+      width: 100%;
+    }
+  }
+  }
+}

@@ -1,9 +1,10 @@
 @use "abstracts/variables" as *;
+@use "abstracts/mixins" as *;
 
 @each $key, $value in $badges {
   .badge--#{$key} {
-    background-color: rgba($value, 0.1);
     color: $value;
+    @include backgroundColor($value)
   }
 }
 
