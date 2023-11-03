@@ -1,0 +1,17 @@
+@use "abstracts/variables" as *;
+
+body {
+  color: $color-text;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 14px;
+  max-width: 1440px;
+}
+
+.block-form {
+  font-family: $form-font;
+
+  .form__heading {
+    font-size: 40px;
+    font-weight: 700;
+  }
+}
