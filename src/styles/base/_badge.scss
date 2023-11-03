@@ -1,0 +1,17 @@
+@use "abstracts/variables" as *;
+
+@each $key, $value in $badges {
+  .badge--#{$key} {
+    background-color: rgba($value, 0.1);
+    color: $value;
+  }
+}
+
+.badge {
+  border-radius: 100px;
+  padding: 7px 14px; 
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  -o-border-radius: 100px;
+}

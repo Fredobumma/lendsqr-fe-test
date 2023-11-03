@@ -1,16 +1,9 @@
-import { Heading, Text } from "./elements";
+import { Badge } from "./baseElements";
 
 function App() {
 	return (
 		<>
-			<div className="block-form">
-				<Heading
-					tag="h1"
-					className="heading form__heading"
-					children="Welcome!"
-				/>
-				<Text children="Enter details to login." />
-			</div>
+			<Badge children="Blacklisted" className="badge--pending" />
 		</>
 	);
 }
