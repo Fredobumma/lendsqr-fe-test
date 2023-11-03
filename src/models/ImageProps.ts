@@ -3,3 +3,4 @@ interface ImageProps {
 }
 
 export default ImageProps;
+// Figure/Picture component props object type.

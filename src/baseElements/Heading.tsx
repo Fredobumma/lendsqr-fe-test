@@ -6,3 +6,4 @@ const Heading = ({ tag, className, children }: ElementsProps) => {
 };
 
 export default Heading;
+// Basic heading text structure.

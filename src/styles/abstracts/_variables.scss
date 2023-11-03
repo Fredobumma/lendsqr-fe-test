@@ -1,3 +1,4 @@
+/* Variables. */
 $color-primary: #213F7D;
 $color-secondary: #39CDCC;
 $color-text: #545F7D;
@@ -12,6 +13,7 @@ $form-font: 'Avenir Next', sans-serif;
 $tablet-breakpoint: 768px;
 $desktop-breakpoint: 1024px;
 
+/* Maps. */
 $badges: (
   "active": $color-active,
   "blacklisted": $color-blacklisted,

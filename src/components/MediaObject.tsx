@@ -12,3 +12,4 @@ const MediaObject = () => {
 };
 
 export default MediaObject;
+// Basic media-objects component structure.

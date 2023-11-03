@@ -12,3 +12,4 @@ const Badge = ({ children, className }: BadgeProps) => {
 };
 
 export default Badge;
+// Basic badge structure (a span container and text).

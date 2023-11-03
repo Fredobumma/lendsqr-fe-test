@@ -21,3 +21,4 @@ const Card = () => {
 };
 
 export default Card;
+// Basic card component structure.

@@ -6,3 +6,4 @@ import users from "./users.png";
 import user_avi from "./user-avi.png";
 
 export { active_users, chevron, loans, savings, users, user_avi };
+// Exporting all image.

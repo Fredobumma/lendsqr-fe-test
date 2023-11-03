@@ -14,3 +14,4 @@ const Figure = ({
 };
 
 export default Figure;
+// Figure element to wrap small size images, svgs and icons.

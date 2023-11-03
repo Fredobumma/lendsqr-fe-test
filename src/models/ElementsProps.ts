@@ -5,3 +5,4 @@ export default interface ElementsProps {
 	className?: string;
 	children: ReactNode;
 }
+// Element component props object type.

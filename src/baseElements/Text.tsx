@@ -11,3 +11,4 @@ const Text = ({ tag = "p", className, children }: TextProps) => {
 };
 
 export default Text;
+// Basic app text structure.

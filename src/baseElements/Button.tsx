@@ -8,3 +8,4 @@ const Button = ({ tag, children, className }: ElementsProps) => {
 };
 
 export default Button;
+// Basic app button structure.
