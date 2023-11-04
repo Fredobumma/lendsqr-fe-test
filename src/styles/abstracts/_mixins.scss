@@ -1,8 +1,26 @@
-/* Mixins. */
+/**** Mixins. ****/
+@use "abstracts/variables" as *;
+
+@mixin backgroundColor($value) {
+  background-color: rgba($value, 0.1);
+}
+
 @mixin border($value) {
   border: 1px solid $value;
 }
 
-@mixin backgroundColor($value) {
-  background-color: rgba($value, 0.1);
+@mixin borderRadius($value) {
+  border-radius: $value;
+  -webkit-border-radius: $value;
+  -moz-border-radius: $value;
+  -ms-border-radius: $value;
+  -o-border-radius: $value;
+}
+
+@mixin transition($value) {
+  transition: $value;
+  -webkit-transition: $value;
+  -moz-transition: $value;
+  -ms-transition: $value;
+  -o-transition: $value;
 }

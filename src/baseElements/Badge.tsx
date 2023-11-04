@@ -1,4 +1,4 @@
-import { Text } from ".";
+import { Text } from "./";
 import type { ElementsProps } from "src/models";
 
 type BadgeProps = Omit<ElementsProps, "tag">;

@@ -2,13 +2,13 @@ import type { ImageProps } from "src/models";
 
 const Figure = ({
 	altText,
-	containerClass = "",
+	containerStyles = "",
 	image,
-	imageClass = "",
+	imageStyles = "",
 }: ImageProps) => {
 	return (
-		<figure className={`figure ${containerClass}`}>
-			<img src={image} className={imageClass} alt={altText} />
+		<figure className={`figure ${containerStyles}`}>
+			<img src={image} className={imageStyles} alt={altText} />
 		</figure>
 	);
 };

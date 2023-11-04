@@ -1,6 +1,6 @@
 /* Buttons styles. */
-@use "abstracts/variables" as *;
 @use "abstracts/mixins" as *;
+@use "abstracts/variables" as *;
 
 @each $key, $value in $buttons {
   .btn--#{$key} {
@@ -11,12 +11,8 @@
 }
 
 .btn {
-  border-radius: 8px;
   font-weight: 600;
-  -webkit-border-radius: 8px;
-  -moz-border-radius: 8px;
-  -ms-border-radius: 8px;
-  -o-border-radius: 8px;
+  @include borderRadius(8px);
 }
 
 .btn--fill {

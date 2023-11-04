@@ -1,12 +1,13 @@
-import { ListItem } from "./components";
+import { TextInput } from "./baseElements";
 
 function App() {
 	return (
 		<>
-			<ListItem className="list-item--options" />
-			<ListItem className="list-item--nav" />
-			<ListItem className="list-item--nav in-active" />
-			<ListItem className="list-item--route" />
+			<div className="block-form">
+				<TextInput name="email" type="text" placeholder="Email" />
+				<TextInput name="email" type="password" placeholder="Password" />
+			</div>
+			<TextInput name="email" type="text" placeholder="Email" label="Email" />
 		</>
 	);
 }

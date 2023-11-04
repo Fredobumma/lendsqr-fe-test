@@ -1,6 +1,6 @@
 /* Badges styles. */
-@use "abstracts/variables" as *;
 @use "abstracts/mixins" as *;
+@use "abstracts/variables" as *;
 
 @each $key, $value in $badges {
   .badge--#{$key} {
@@ -10,10 +10,5 @@
 }
 
 .badge {
-  border-radius: 100px;
-  padding: 7px 14px; 
-  -webkit-border-radius: 100px;
-  -moz-border-radius: 100px;
-  -ms-border-radius: 100px;
-  -o-border-radius: 100px;
+  @include borderRadius(100px);
 }

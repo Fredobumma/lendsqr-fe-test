@@ -6,9 +6,9 @@ const Card = () => {
 		<div className="card">
 			<Figure
 				altText="icon"
-				containerClass="card card__icon-container card--users"
+				containerStyles="card card__icon-container card--users"
 				image={users}
-				imageClass="card__icon"
+				imageStyles="card__icon"
 			/>
 			<Heading tag="h3" className="heading sub-heading">
 				Users
