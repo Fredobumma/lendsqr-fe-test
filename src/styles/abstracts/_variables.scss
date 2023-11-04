@@ -1,4 +1,5 @@
-/* Variables. */
+/**** VARIABLES. ****/
+// colors
 $color-primary: #213F7D;
 $color-secondary: #39CDCC;
 $color-text: #545F7D;
@@ -8,12 +9,14 @@ $color-pending: #E9B200;
 $color-white: #fff;
 $transparent: transparent;
 
+// form
 $form-font: 'Avenir Next', sans-serif;
 
+// breakpoint
 $tablet-breakpoint: 768px;
 $desktop-breakpoint: 1024px;
 
-/* Maps. */
+/**** MAPS. ****/
 $badges: (
   "active": $color-active,
   "blacklisted": $color-blacklisted,
@@ -32,4 +35,10 @@ $cards: (
   "active-users": #5718FF,
   "loans": #F55F44,
   "savings": #FF3366,
+);
+
+$list-items: (
+  "nav": 10px,
+  "options": 8px,
+  "route": 13px,
 )

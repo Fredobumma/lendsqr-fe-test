@@ -1,0 +1,30 @@
+/* List-Item styles. */
+@use "abstracts/variables" as *;
+
+@each $key, $value in $list-items {
+  .list-item--#{$key} {
+    gap: $value;
+    
+    .list-item__text {
+      color: $color-primary;
+      font-size: 16px;
+      // if the iteration key is (options) then set different font size & weight
+      @if ($key == "options") {
+        font-size: 14px;
+        font-weight: 500; 
+      }
+    }
+
+    // if there's an in-active class and the iteration key is (nav) then set opacity
+    &.in-active {
+      @if ($key == "nav") {
+        opacity: 0.6;
+      }
+    }
+  }
+}
+
+.list-item {
+  align-items: center;
+  display: flex;
+}
