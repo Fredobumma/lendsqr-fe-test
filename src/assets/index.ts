@@ -1,10 +1,10 @@
-// Card images
+// Card icons
 import active_users from "./active-users.png";
 import loans from "./loans.png";
 import savings from "./savings.png";
 import users from "./users.png";
 
-// List-Item images
+// List-Item icons
 import activate_user from "./activate-user.png";
 import audit_logs from "./audit-logs.png";
 import bank from "./bank.png";
@@ -32,9 +32,12 @@ import user_dashboard from "./user-dashboard.png";
 import view from "./view.png";
 import whitelist from "./whitelist.png";
 
-// Media-Object images
+// Media-Object images/icons
 import dropdown from "./dropdown.svg";
 import user_avi from "./user-avi.png";
+
+// Input icons
+import search from "./search.png";
 
 export {
 	activate_user,
@@ -59,6 +62,7 @@ export {
 	preferences,
 	reports,
 	savings,
+	search,
 	service_account,
 	services,
 	settlements,

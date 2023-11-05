@@ -17,7 +17,7 @@ body {
     font-size: 40px;
   }
 
-  .form-text {
+  .form__text {
     color: $color-secondary;
     cursor: pointer;
     font-size: 12px;
@@ -30,7 +30,7 @@ body {
     opacity: 0.6;
   }
 
-  .text-input {
+  .text--input {
     border: 2px solid rgba($color-text, 0.15);
     padding: 16px;
     @include borderRadius(5px)

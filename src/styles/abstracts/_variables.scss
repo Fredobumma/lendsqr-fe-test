@@ -17,6 +17,11 @@ $tablet-breakpoint: 768px;
 $desktop-breakpoint: 1024px;
 
 
+/**** LISTS. ****/
+// browers cancel-buttons
+$browsers: webkit-search-cancel-button, ms-clear, moz-cancel-button;
+
+
 /**** MAPS. ****/
 $badges: (
   "active": $color-active,

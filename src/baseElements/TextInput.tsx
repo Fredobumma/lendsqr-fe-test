@@ -1,21 +1,15 @@
 import { Text } from "./";
+import type { InputProps } from "src/models";
 
-interface TextInputProps {
-	label?: string;
-	name: string;
-	placeholder: string;
-	type: string;
-}
-
-const TextInput = ({ label, name, placeholder, type }: TextInputProps) => {
+const TextInput = ({ label, name, placeholder, type }: InputProps) => {
 	return (
 		<div className="input-container">
 			{label && (
-				<label htmlFor={name} className="input-label">
+				<label htmlFor={name} className="input__label">
 					{label}
 				</label>
 			)}
-			<div className="text-input">
+			<div className="input__box text--input">
 				<input
 					className="input"
 					id={name}
@@ -25,7 +19,7 @@ const TextInput = ({ label, name, placeholder, type }: TextInputProps) => {
 				/>
 				{type === "password" && (
 					<span>
-						<Text tag="span" className="form-text">
+						<Text tag="span" className="form__text">
 							show
 						</Text>
 					</span>

@@ -1,0 +1,7 @@
+/* Text-Input styles. */
+@use "abstracts/mixins" as *;
+@use "abstracts/variables" as *;
+
+.text--input {
+  @include borderRadius(8px);
+}

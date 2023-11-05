@@ -1,0 +1,27 @@
+/* Search-Input styles. */
+@use "abstracts/mixins" as *;
+@use "abstracts/variables" as *;
+
+/* Apply custom styles to the cancel button in Chrome, Edge and IE, firefox */
+@each $browser in $browsers {
+  .input[type="search"]::-#{$browser} {
+    cursor: pointer;
+    margin-left: 10px;
+  }
+}
+
+.search-container {
+  display: flex;
+}
+
+.input__box.search--input {
+  padding-right: 10px;
+  @include borderRadius(8px 0 0 8px)
+}
+
+.search__icon {
+  background-color: $color-secondary;
+  cursor: pointer;
+  padding: 13px 21px;
+  @include borderRadius(0 8px 8px 0)
+}

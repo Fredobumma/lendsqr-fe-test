@@ -12,13 +12,15 @@
 /* base imports */
 @use "base/badges";
 @use "base/buttons";
-@use "base/text-input";
+@use "base/inputs";
 @use "base/typography";
 
 /* component imports */
 @use "components/cards";
 @use "components/list-item";
 @use "components/media-object";
+@use "components/search-input";
+@use "components/text-input";
 
 /* layouts imports */
 @use "layouts/layouts";
