@@ -8,7 +8,7 @@
 .input__box {
   border: 1px solid rgba($color-primary, 0.2);
   display: inline-block;
-  padding: 12px 20px;
+  overflow: hidden;
   @include borderRadius(8px);
   @include transition(all 0.3s)
 }
@@ -19,6 +19,7 @@ input {
   font-family: inherit;
   font-size: 14px;
   font-weight: 600;
+  padding: 12px 20px;
   outline: none;
 }
 

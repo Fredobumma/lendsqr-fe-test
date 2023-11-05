@@ -1,4 +1,9 @@
-import { SearchInput, TextInput } from "./baseElements";
+import { SearchInput, SelectInput, TextInput } from "./baseElements";
+
+const selectOptions = [
+	{ value: 1, label: "English" },
+	{ value: 2, label: "Hindi" },
+];
 
 function App() {
 	return (
@@ -12,6 +17,7 @@ function App() {
 				<TextInput name="email" type="text" placeholder="Email" />
 				<TextInput name="email" type="password" placeholder="Password" />
 			</div>
+			<SelectInput label="Status" name="search" optionsList={selectOptions} />
 			<TextInput name="email" type="text" placeholder="Email" label="Email" />
 		</>
 	);
