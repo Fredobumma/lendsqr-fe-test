@@ -8,34 +8,34 @@
   @include border(rgba(33, 63, 125, 0.06));
   @include borderRadius(4px);
 
-  .card__icon-container {
+  &__icon-container {
     padding: 5px;
     @include borderRadius(50%);
 
-    .card__icon {
+    &__icon {
       height: 18px;
       width: 18px;
     }
   }
 
   @each $key, $value in $cards {
-    .card--#{$key} {
+    &--#{$key} {
       @include backgroundColor($value)
     }  
   }
-
-  .sub-heading {
-    margin: 14px 0 12px;
-  }
-
+  
   @media screen and (min-width: $desktop-breakpoint) {
-  .card__icon-container {
-    padding: 9px;
+    &__icon-container {
+      padding: 9px;
 
-    .card__icon {
-      height: auto;
-      width: 100%;
+      &__icon {
+        height: auto;
+        width: 100%;
+      }
     }
   }
+  
+  .sub-heading {
+    margin: 14px 0 12px;
   }
 }

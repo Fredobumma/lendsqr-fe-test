@@ -11,20 +11,22 @@ body {
 }
 
 /* Form styles */
-.block-form, .block-form > * {
+.block-form {
   font-family: $form-font;
 
-  .form__heading {
-    font-size: 40px;
-  }
+  .form {
+    &__heading {
+      font-size: 40px;
+    }
 
-  .form__text {
-    color: $color-secondary;
-    cursor: pointer;
-    font-size: 12px;
-    font-weight: 600;
-    letter-spacing: 1.2px;
-    text-transform: uppercase;
+    &__text {
+      color: $color-secondary;
+      cursor: pointer;
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 1.2px;
+      text-transform: uppercase;
+    }
   }
 
   .input::placeholder {

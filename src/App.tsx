@@ -1,9 +1,12 @@
-import { Table } from "./components";
+import { ListItem } from "./components";
 
 function App() {
 	return (
 		<>
-			<Table />
+			<ListItem className="list-item--options" />
+			<ListItem className="list-item--nav" />
+			<ListItem className="list-item--nav in-active" />
+			<ListItem className="list-item--route" />
 		</>
 	);
 }

@@ -2,13 +2,13 @@
 @use "abstracts/mixins" as *;
 @use "abstracts/variables" as *;
 
-@each $key, $value in $badges {
-  .badge--#{$key} {
-    color: $value;
-    @include backgroundColor($value)
-  }
-}
-
 .badge {
   @include borderRadius(100px);
+  
+  @each $key, $value in $badges {
+    &--#{$key} {
+      color: $value;
+      @include backgroundColor($value)
+    }
+  }
 }

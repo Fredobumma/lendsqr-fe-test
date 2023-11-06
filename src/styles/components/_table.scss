@@ -2,19 +2,21 @@
 @use "abstracts/mixins" as *;
 @use "abstracts/variables" as *;
 
-.table-container {
-  border: 1px solid rgba($color-primary, 0.06);
-  box-shadow: 3px 5px 20px 0px rgba(0, 0, 0, 0.04);
-  overflow-x: auto;
-  padding: 0 30px;
-  @include borderRadius(4px);
+.table {
+  &-container {
+    border: 1px solid rgba($color-primary, 0.06);
+    box-shadow: 3px 5px 20px 0px rgba(0, 0, 0, 0.04);
+    overflow-x: auto;
+    padding: 0 30px;
+    @include borderRadius(4px);
 
-  * {
-    text-align: left;
-    text-wrap: nowrap;
+    * {
+      text-align: left;
+      text-wrap: nowrap;
+    }
   }
 
-  .table {
+  & {
     border-collapse: collapse;
     margin: 0 auto;
   
