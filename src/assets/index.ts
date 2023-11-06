@@ -4,6 +4,9 @@ import loans from "./loans.png";
 import savings from "./savings.png";
 import users from "./users.png";
 
+// Input icons
+import search from "./search.png";
+
 // List-Item icons
 import activate_user from "./activate-user.png";
 import audit_logs from "./audit-logs.png";
@@ -36,8 +39,10 @@ import whitelist from "./whitelist.png";
 import dropdown from "./dropdown.svg";
 import user_avi from "./user-avi.png";
 
-// Input icons
-import search from "./search.png";
+// Table icons
+import chevron from "./chevron.png";
+import filter from "./filter.png";
+import options from "./options.png";
 
 export {
 	activate_user,
@@ -46,10 +51,12 @@ export {
 	bank,
 	blacklist_user,
 	briefcase,
+	chevron,
 	dashboard,
 	dropdown,
 	fees_charges,
 	fees_pricing,
+	filter,
 	go_back,
 	guarantors,
 	handshake,
@@ -58,6 +65,7 @@ export {
 	loan_offer,
 	loans,
 	logout,
+	options,
 	piggy_bank,
 	preferences,
 	reports,

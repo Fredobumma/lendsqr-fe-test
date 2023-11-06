@@ -1,0 +1,61 @@
+/* Table styles. */
+@use "abstracts/mixins" as *;
+@use "abstracts/variables" as *;
+
+.table-container {
+  border: 1px solid rgba($color-primary, 0.06);
+  box-shadow: 3px 5px 20px 0px rgba(0, 0, 0, 0.04);
+  overflow-x: auto;
+  padding: 0 30px;
+  @include borderRadius(4px);
+
+  * {
+    text-align: left;
+    text-wrap: nowrap;
+  }
+
+  .table {
+    border-collapse: collapse;
+    margin: 0 auto;
+  
+
+    &__cell {
+      padding-block: 23px;
+
+      &:not(:last-of-type) {
+        padding-right: 23px;
+      }
+    }
+
+    &__heading {
+      font-size: 12px;
+      font-weight: 600;
+      padding-bottom: 13px;
+      padding-top: 30px;
+      text-transform: uppercase;
+
+      .heading {
+        margin-right: 10px;
+      }
+
+      .figure {
+        vertical-align: middle;
+      }
+
+      &:not(:last-of-type) {
+        padding-right: 30px;
+      }
+    }
+
+    &__row {
+      &:hover {
+        cursor: pointer;
+        background-color: rgba($color-text, 0.1);
+      }
+
+      &:not(:last-child) {
+        border-bottom: 1px solid rgba($color-primary, 0.1);
+      }
+    }
+  }
+}

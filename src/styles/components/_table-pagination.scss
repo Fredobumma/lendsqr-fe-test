@@ -1,0 +1,85 @@
+/* Table-pagination styles. */
+@use "abstracts/mixins" as *;
+@use "abstracts/variables" as *;
+
+.pagination-container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: space-between;
+  margin: 20px 0;
+
+  .page {
+    &__details {
+      align-items: center;
+      display: flex;
+      gap: 10px;
+    }
+
+    &__select {
+      color: $color-primary;
+      display: flex;
+      font-weight: 500;
+      gap: 18px;
+      padding: 7px 12px;
+      @include backgroundColor($color-primary);
+      @include borderRadius(4px);
+
+      .chevron {
+        rotate: 90deg;
+      }
+    }
+
+    &__list {
+      align-items: center;
+      display: flex;
+      gap: 20px;
+      list-style-type: none;
+      padding: 0;
+      text-align: center;
+    }
+
+    &__numbers,
+    &__btn,
+    &__dots {
+      cursor: pointer;
+    }
+    
+    &__numbers {
+      font-size: 16px;
+
+      &.active {
+        font-weight: 500;
+      }
+    }
+
+    &__btn {
+      align-items: center;
+      display: flex;
+      padding: 5px;
+      pointer-events: none;
+      @include borderRadius(4px);
+      @include backgroundColor($color-primary);
+
+      &:first-of-type {
+        rotate: 180deg;
+      }
+    }
+
+  }
+  
+  .chevron {
+    opacity: 0.6;
+
+    &:focus, &:hover, &:active {
+      opacity: 1;
+    }
+  }
+
+  @media screen and (min-width: $tablet-breakpoint) {
+    & {
+      flex-direction: unset;
+    }
+  }
+}
