@@ -1,3 +1,10 @@
+// Logo
+import logo from "./logo.svg";
+
+// Login Image
+import login_img_png from "./login-img.png";
+import login_img_webp from "./login-img.webp";
+
 // Card icons
 import active_users from "./active-users.png";
 import loans from "./loans.png";
@@ -64,6 +71,9 @@ export {
 	loan_bag,
 	loan_offer,
 	loans,
+	login_img_png,
+	login_img_webp,
+	logo,
 	logout,
 	options,
 	piggy_bank,

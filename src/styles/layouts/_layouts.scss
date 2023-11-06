@@ -6,43 +6,18 @@ body {
   color: $color-text;
   font-family: 'Work Sans', sans-serif;
   font-size: 14px;
+  line-height: normal;
+  margin: auto;
   max-width: 1440px;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
-/* Form styles */
-.block-form {
-  font-family: $form-font;
+main {
+  padding: 30px 16px;
 
-  .form {
-    &__heading {
-      font-size: 40px;
-    }
-
-    &__text {
-      color: $color-secondary;
-      cursor: pointer;
-      font-size: 12px;
-      font-weight: 600;
-      letter-spacing: 1.2px;
-      text-transform: uppercase;
-    }
+  @media screen and (min-width: $tablet-breakpoint) {
+    padding: 0;
   }
-
-  .input::placeholder {
-    opacity: 0.6;
-  }
-
-  .text--input {
-    border: 2px solid rgba($color-text, 0.15);
-    padding-right: 16px;
-    @include borderRadius(5px);
-
-    input {
-      padding: 16px;
-    }
-  }
-
 }
 
 /* Image styles */
@@ -50,4 +25,10 @@ body {
   display: inline-block;
   line-height: 0;
   margin: 0;
+}
+
+.image {
+  height: auto;
+  max-width: 100%;
+  width: 600px;
 }

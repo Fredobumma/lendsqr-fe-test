@@ -1,0 +1,135 @@
+/* Login page styles. */
+@use "abstracts/mixins" as *;
+@use "abstracts/variables" as *;
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+
+  .block {
+    display: flex;
+    flex-direction: column;
+    font-family: $form-font;
+
+    .form {
+      margin-top: 60px;
+
+      &-container {
+        margin-inline: auto;
+        margin-top: 80px;
+        max-width: 450px;
+        width: 100%;
+      }
+
+      &__heading {
+        font-size: 40px;
+        letter-spacing: -1.6px;
+      }
+
+      &__text {
+        color: $color-secondary;
+        cursor: pointer;
+        font-size: 12px;
+        font-weight: 600;
+        letter-spacing: 1.2px;
+        text-decoration: none;
+        text-transform: uppercase;
+      }
+
+      .btn {
+        margin-top: 30px;
+        padding-block: 14px;
+        text-transform: uppercase;
+        width: 100%;
+      }
+    }
+
+    .input::placeholder {
+      opacity: 0.6;
+    }
+
+    .logo, picture {
+      align-self: center;
+    }
+
+    .sub__title {
+      font-size: 20px;
+      margin: 10px 0 60px;
+    }
+
+    .sub__title, .form__heading {
+      text-align: center;
+    }
+
+    .text--input {
+      border: 2px solid rgba($color-text, 0.15);
+      margin-bottom: 24px;
+      padding-right: 16px;
+      @include borderRadius(5px);
+      
+      input {
+        padding: 16px;
+      }
+    }
+
+    &:first-of-type {
+      picture {
+        display: none;
+      } 
+    }
+  }
+
+  @media screen and (min-width: $tablet-breakpoint) {
+    flex-direction: unset;
+
+    .block {
+      height: 100vh;
+      padding-inline: 30px;
+      width: 50%;
+
+      .logo {
+        margin-top: 30px;
+      }
+
+      .sub__title, .form__heading {
+        text-align: unset;
+      }
+
+      &:first-of-type {
+        picture {
+          display: block;
+          margin-top: 120px;
+        } 
+      }
+      
+      &:last-of-type {
+        box-shadow: 0px 15px 90px 0px rgba(#000, 0.03);
+
+        picture {
+          display: none;
+        }
+      }
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+    .block {
+      justify-content: center;
+
+      .form-container {
+        margin-top: 0;
+      }
+
+      .logo {
+        margin-bottom: 140px;
+        margin-top: -80px;
+      }
+
+      &:first-of-type {
+        picture {
+          margin-block: 0;
+        }
+      }
+    }
+  }
+}

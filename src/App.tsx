@@ -1,12 +1,9 @@
-import { ListItem } from "./components";
+import { Login } from "./pages";
 
 function App() {
 	return (
 		<>
-			<ListItem className="list-item--options" />
-			<ListItem className="list-item--nav" />
-			<ListItem className="list-item--nav in-active" />
-			<ListItem className="list-item--route" />
+			<Login />
 		</>
 	);
 }

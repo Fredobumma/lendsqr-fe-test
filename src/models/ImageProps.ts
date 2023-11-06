@@ -1,4 +1,5 @@
 interface ImageProps {
+	altText: string;
 	[key: string]: string;
 }
 

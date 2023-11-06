@@ -10,6 +10,7 @@ input {
   font-weight: 600;
   padding: 12px 20px;
   outline: none;
+  max-width: 100%;
 
   &::placeholder {
     color: $color-text;
@@ -19,13 +20,16 @@ input {
 }
 
 .input {
+  flex: 1;
+    
   &-container &__box:focus-within {
     border-color: $color-secondary;
   }
 
   &__box {
+    align-items: center;
     border: 1px solid rgba($color-primary, 0.2);
-    display: inline-block;
+    display: flex;
     overflow: hidden;
     @include borderRadius(8px);
     @include transition(all 0.3s)

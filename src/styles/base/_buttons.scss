@@ -3,6 +3,7 @@
 @use "abstracts/variables" as *;
 
 .btn {
+  cursor: pointer;
   font-weight: 600;
   @include borderRadius(8px);
 
