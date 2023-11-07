@@ -1,0 +1,84 @@
+/* Navbar styles. */
+@use "abstracts/variables" as *;
+
+.nav {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  left: 0;
+  padding: 30px;
+  position: fixed;
+  right: 0;
+  top: 0;
+
+  &__details {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__link {
+    color: $color-primary;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    margin-right: 20px;
+  }
+
+  .menu-layout {
+    display: none;
+
+    &.mobile {
+      display: block;
+      left: 0;
+      padding: 40px 14px;
+      position: absolute;
+      right: 0;
+      top: 100%;
+    }
+
+    .search {
+      &-container {
+        flex: 1;
+        margin: 0 auto 40px;
+        max-width: 400px;
+      }
+
+      &--input {
+        flex: 1;
+      }
+    }
+  }
+
+  .menu, &__details > * {
+    cursor: pointer;
+  }
+
+  @media screen and (min-width: $desktop-breakpoint) {
+    gap: 100px;
+
+    &__link {
+      margin-right: 47px;
+    }
+
+    .menu-layout, .menu-layout.mobile {
+      align-items: center;
+      display: flex;
+      flex: 1;
+      gap: 40px;
+      justify-content: space-between;
+      padding: 0;
+      position: unset;
+
+      .search {
+        &-container {
+          margin: 0;
+        }
+      }
+    }
+
+    .menu {
+      display: none;
+    }
+  }
+}

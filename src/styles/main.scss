@@ -20,6 +20,7 @@
 @use "components/cards";
 @use "components/list-item";
 @use "components/media-object";
+@use "components/navbar";
 @use "components/search-input";
 @use "components/table";
 @use "components/table-pagination";
@@ -32,7 +33,7 @@
 @use "pages/login";
 
 /* fonts imports */
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Work+Sans:wght@400;500;600;700&display=swap');
 
 @font-face {
   font-family: 'Avenir Next';

@@ -1,10 +1,3 @@
-// Logo
-import logo from "./logo.svg";
-
-// Login Image
-import login_img_png from "./login-img.png";
-import login_img_webp from "./login-img.webp";
-
 // Card icons
 import active_users from "./active-users.png";
 import loans from "./loans.png";
@@ -42,9 +35,21 @@ import user_dashboard from "./user-dashboard.png";
 import view from "./view.png";
 import whitelist from "./whitelist.png";
 
+// Logo
+import logo from "./logo.svg";
+
+// Login Image
+import login_img_png from "./login-img.png";
+import login_img_webp from "./login-img.webp";
+
 // Media-Object images/icons
 import dropdown from "./dropdown.svg";
 import user_avi from "./user-avi.png";
+
+// Navbar icons
+import close_menu from "./close-menu.png";
+import menu from "./menu.png";
+import notification from "./notification.png";
 
 // Table icons
 import chevron from "./chevron.png";
@@ -59,6 +64,7 @@ export {
 	blacklist_user,
 	briefcase,
 	chevron,
+	close_menu,
 	dashboard,
 	dropdown,
 	fees_charges,
@@ -75,6 +81,8 @@ export {
 	login_img_webp,
 	logo,
 	logout,
+	menu,
+	notification,
 	options,
 	piggy_bank,
 	preferences,
