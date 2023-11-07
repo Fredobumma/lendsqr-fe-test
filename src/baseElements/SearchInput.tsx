@@ -15,7 +15,7 @@ const SearchInput = ({ name, placeholder, type }: InputProps) => {
 				/>
 			</div>
 			<div className="search__icon">
-				<Figure image={search} />
+				<Figure image={search} altText="search" />
 			</div>
 		</div>
 	);

@@ -10,27 +10,27 @@ const Table = () => {
 						<tr>
 							<th className="table__heading">
 								<span className="heading">organization</span>
-								<Figure image={filter} />
+								<Figure altText="filter icon" image={filter} />
 							</th>
 							<th className="table__heading">
 								<span className="heading">username</span>
-								<Figure image={filter} />
+								<Figure altText="filter icon" image={filter} />
 							</th>
 							<th className="table__heading">
 								<span className="heading">email</span>
-								<Figure image={filter} />
+								<Figure altText="filter icon" image={filter} />
 							</th>
 							<th className="table__heading">
 								<span className="heading">phone number</span>
-								<Figure image={filter} />
+								<Figure altText="filter icon" image={filter} />
 							</th>
 							<th className="table__heading">
 								<span className="heading">date joined</span>
-								<Figure image={filter} />
+								<Figure altText="filter icon" image={filter} />
 							</th>
 							<th className="table__heading">
 								<span className="heading">status</span>
-								<Figure image={filter} />
+								<Figure altText="filter icon" image={filter} />
 							</th>
 							<th></th>
 						</tr>
@@ -44,7 +44,7 @@ const Table = () => {
 							<td className="table__cell">Stephanie Og</td>
 							<td className="table__cell">Stephanie Og</td>
 							<td className="table__cell">
-								<Figure image={options} />
+								<Figure altText="options icon" image={options} />
 							</td>
 						</tr>
 						<tr className="table__row">
@@ -55,7 +55,7 @@ const Table = () => {
 							<td className="table__cell">Stephanie Og</td>
 							<td className="table__cell">Stephanie Og</td>
 							<td className="table__cell">
-								<Figure image={options} />
+								<Figure altText="options icon" image={options} />
 							</td>
 						</tr>
 						<tr className="table__row">
@@ -66,7 +66,7 @@ const Table = () => {
 							<td className="table__cell">Stephanie Og</td>
 							<td className="table__cell">Stephanie Og</td>
 							<td className="table__cell">
-								<Figure image={options} />
+								<Figure altText="options icon" image={options} />
 							</td>
 						</tr>
 						<tr className="table__row">
@@ -77,7 +77,7 @@ const Table = () => {
 							<td className="table__cell">Stephanie Og</td>
 							<td className="table__cell">Stephanie Og</td>
 							<td className="table__cell">
-								<Figure image={options} />
+								<Figure altText="options icon" image={options} />
 							</td>
 						</tr>
 					</tbody>
@@ -88,13 +88,21 @@ const Table = () => {
 					<Text>Showing</Text>
 					<div className="page__select">
 						<Text>100</Text>
-						<Figure image={chevron} containerStyles="chevron" />
+						<Figure
+							altText="options icon"
+							image={chevron}
+							containerStyles="chevron"
+						/>
 					</div>
 					<Text>out of 100</Text>
 				</div>
 				<ul className="page__list">
 					<li className="page__btn">
-						<Figure image={chevron} containerStyles="chevron" />
+						<Figure
+							altText="options icon"
+							image={chevron}
+							containerStyles="chevron"
+						/>
 					</li>
 					<li className="page__numbers"> 1</li>
 					<li className="page__numbers active">2</li>
@@ -105,7 +113,11 @@ const Table = () => {
 					<li className="page__dots">...</li>
 					<li className="page__numbers"> 10</li>
 					<li className="page__btn">
-						<Figure image={chevron} containerStyles="chevron" />
+						<Figure
+							altText="options icon"
+							image={chevron}
+							containerStyles="chevron"
+						/>
 					</li>
 				</ul>
 			</div>

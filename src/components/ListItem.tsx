@@ -4,7 +4,7 @@ import { Figure, Text } from "src/baseElements";
 const ListItem = ({ className = "" }) => {
 	return (
 		<div className={`list-item ${className}`}>
-			<Figure image={guarantors} />
+			<Figure altText="icon" image={guarantors} />
 			<Text className="list-item__text">Guarantors</Text>
 		</div>
 	);
