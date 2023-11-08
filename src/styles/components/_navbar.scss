@@ -3,20 +3,24 @@
 
 .nav {
   align-items: center;
+  box-shadow: 3px 0px 20px 0px rgba(#000, 0.04);
   display: flex;
   justify-content: space-between;
   left: 0;
+  margin: 0 auto;
+  max-width: 1440px;
   padding: 30px;
   position: fixed;
   right: 0;
   top: 0;
-
+  z-index: 20;
+  
   &__details {
     align-items: center;
     display: flex;
     justify-content: center;
   }
-
+  
   &__link {
     color: $color-primary;
     font-family: 'Roboto', sans-serif;
@@ -29,6 +33,7 @@
     display: none;
 
     &.mobile {
+      background-color: $color-white;
       display: block;
       left: 0;
       padding: 40px 14px;
@@ -36,7 +41,7 @@
       right: 0;
       top: 100%;
     }
-
+    
     .search {
       &-container {
         flex: 1;

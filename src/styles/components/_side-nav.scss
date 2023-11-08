@@ -1,0 +1,103 @@
+/* Sidebar styles. */
+@use "abstracts/mixins" as *;
+@use "abstracts/variables" as *;
+
+.side-nav {
+  .side-nav-container {
+    bottom: 0px; 
+    box-shadow: 5px 0px 20px rgba(#000, 0.04);
+    display: flex;
+    flex-direction: column;
+    left: 0;
+    max-width: none;
+    overflow-y: scroll;
+    padding-bottom: 30px;
+    padding-top: 24px;  
+    position: fixed;
+    top: 96px;
+    width: 100%;
+    z-index: 5;
+    
+    &.hidden {
+      display: none;
+    }
+  }
+
+  .nav {
+    &--item {
+      display: flex;
+      align-items: center;
+      margin-top: 15px;
+      padding-block: 10px;
+
+      &.active {
+        border-left: 3px solid $color-secondary;
+        background: rgba($color-secondary, 0.06);
+      }
+
+      .chevron {
+        cursor: pointer;
+        margin-left: 9px;
+        rotate: 90deg;
+      }
+    }
+
+    &-group--title {
+      color: $color-primary;
+      font-weight: 500;
+      font-size: 12px;
+      margin-top: 31px;
+      margin-bottom: 10px;
+    }
+
+    &-group--title, &--item {
+      padding-left: 30px;
+    }
+  }
+
+  .toggle-button {
+    left: 80%;
+    margin-right: 30px;
+    padding: 10px;
+    position: fixed;
+    top: 20%;
+    z-index: 10;
+    @include backgroundColor($color-text);
+    @include borderRadius(8px);
+  }
+
+  .rotate {
+    rotate: 90deg;
+  }
+  
+  .toggle-button.closed-button {
+    left: 10px;
+  }
+
+  @media screen and (min-width: $tablet-breakpoint) {
+    .side-nav-container {
+      max-width: 50%;
+    }
+      
+    .toggle-button {
+      left: 55%;
+    }
+
+  }
+
+  @media screen and (min-width: $desktop-breakpoint) {
+    .side-nav-container {
+      left: unset;
+      max-width: 280px;
+      top: 108px;
+
+      &.hidden {
+        display: block;
+      }
+    }
+
+    .toggle-button {
+      display: none;
+    }
+  }
+}

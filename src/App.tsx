@@ -1,9 +1,9 @@
-import { Login } from "./pages";
+import { UserDashboard } from "./pages";
 
 function App() {
 	return (
 		<>
-			<Login />
+			<UserDashboard />
 		</>
 	);
 }

@@ -1,9 +1,10 @@
-import { Navbar } from "src/components";
+import { Navbar, SideNav } from "src/components";
 
 const UserDashboard = () => {
 	return (
 		<main>
 			<Navbar />
+			<SideNav />
 		</main>
 	);
 };
